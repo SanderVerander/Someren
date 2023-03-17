@@ -17,7 +17,7 @@ namespace SomerenDAL
         private List<Student> ReadTables(DataTable dataTable)
         {
             List<Student> students = new List<Student>();
-            //niggg
+            //niggge
             foreach (DataRow dr in dataTable.Rows)
             {
                 Student student = new Student()
