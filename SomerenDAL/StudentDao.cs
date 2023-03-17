@@ -17,13 +17,13 @@ namespace SomerenDAL
         private List<Student> ReadTables(DataTable dataTable)
         {
             List<Student> students = new List<Student>();
-
+            //niggg
             foreach (DataRow dr in dataTable.Rows)
             {
                 Student student = new Student()
                 {
-                    Number = (int)dr["StudentId"],
-                    Name = dr["Name"].ToString()
+                    Id = (int)dr["StudentId"],
+                    Name = dr["StudentName"].ToString()
                 };
                 students.Add(student);
             }
